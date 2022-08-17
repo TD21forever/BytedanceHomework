@@ -40,6 +40,8 @@
     NSLog(@"名字:%@ 年龄:%ld",self->name,self->age);
 }
 
+
+
 @end
 
 @implementation PersonProperty
@@ -66,7 +68,20 @@
         });
        
     }
-    NSLog(@"Task%ld",self.number);
+    NSLog(@"Task2 预期100000 结果:%ld  atomic线程不安全",self.number);
 }
+
+- (void)dealloc{
+    NSLog(@"DEALLOC!!");
+}
+
+
+
+@end
+
+
+@implementation Dog
+
+
 
 @end

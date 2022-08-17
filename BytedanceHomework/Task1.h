@@ -40,16 +40,30 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
+
+@interface Dog : NSObject
+
+@property (nonatomic,strong) id owner;
+
+@end
+
+
+
 @interface PersonProperty : NSObject
 
 @property (nonatomic,copy) NSString* name;
 @property (nonatomic,assign) NSInteger age;
 @property (atomic) NSInteger number;
+@property (nonatomic,readonly,assign) NSInteger money;
+@property (nonatomic,copy) NSMutableArray* nickName;
+@property (nonatomic,strong) Dog* dog;
 
 - (instancetype)initWithName:(NSString*)name age:(NSInteger)age;
 - (void)print;
 - (void)increase;
+- (void)dealloc;
 
 @end
+
 
 NS_ASSUME_NONNULL_END
