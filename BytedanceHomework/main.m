@@ -26,10 +26,15 @@ int main(int argc, const char * argv[]) {
     
         
         // 使用property
-//        PersonProperty * personWithProperty = [PersonProperty new];
-//        personWithProperty.name = @"小黄";
-//        personWithProperty.age = 25;
-//        [personWithProperty print];
+        PersonProperty * personWithProperty = [PersonProperty new];
+        personWithProperty.name = @"小黄";
+        personWithProperty.age = 25;
+        [personWithProperty print];
+        // 执行 @dynamic 修饰的属性
+        personWithProperty.gender = @"male";
+        
+        
+        
         
         // 等价下面的代码
 //        [personWithProperty setName:@"小黄"];

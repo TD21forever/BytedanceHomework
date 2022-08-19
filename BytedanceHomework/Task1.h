@@ -58,6 +58,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSMutableArray* nickName;
 @property (nonatomic,strong) Dog* dog;
 
+@property (nonatomic,copy) NSString* gender;
+
+
 - (instancetype)initWithName:(NSString*)name age:(NSInteger)age;
 - (void)print;
 - (void)increase;

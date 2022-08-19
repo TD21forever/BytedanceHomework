@@ -13,6 +13,7 @@
 
 @implementation Person
 
+
 - (instancetype)initWithName:(NSString*)name age:(NSInteger)age{
     if(self = [super init]){
         self->name = name;
@@ -41,10 +42,12 @@
 }
 
 
-
 @end
 
 @implementation PersonProperty
+
+
+@dynamic gender;
 
 @synthesize name = 我是个奇怪的名;
 
